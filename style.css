@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  max-width: 32rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem;
+}
+
+.card__image {
+  max-width: 100%;
+}
+
+.card__title {
+  font-size: 2.4rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.card__description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.6;
+  color: hsl(224, 23%, 55%);
+}
+
+/* Plan */
+.plan {
+  width: 100%;
+  display: flex;
+  margin: 0.5rem 0;
+  padding: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.plan__details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan__name {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.plan__price {
+  font-size: 1.4rem;
+  color: hsl(224, 23%, 55%);
+}
+
+/* Buttons */
+.btn {
+  font-size: 1.6rem;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.btn--primary {
+  padding: 1.2rem;
+  font-weight: 700;
+  color: hsl(225, 100%, 98%);
+  box-shadow: rgba(56, 41, 224, 0.3) 0px 10px 20px -5px;
+  background-color: hsl(245, 75%, 52%);
+  transition: opacity 0.2s;
+}
+
+.btn--primary:hover {
+  opacity: 0.7;
+}
+
+.btn--secondary {
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  transition: color 0.2s;
+}
+
+.btn--secondary:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* Links */
+.link {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.plan__link {
+  color: hsl(245, 75%, 52%);
+  transition: text-decoration 0.2s, opacity 0.2s;
+}
+
+.plan__link:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
